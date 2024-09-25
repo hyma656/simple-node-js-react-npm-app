@@ -1,8 +1,8 @@
 FROM node:latest
 WORKDIR /app
-COPY package*.json  /moksha
+COPY package*.json  /app
 RUN npm install
-RUN npm run 
 COPY . .
+RUN npm run
 CMD ["npm","start"]
 EXPOSE 3000
